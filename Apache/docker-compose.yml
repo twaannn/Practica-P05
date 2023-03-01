@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+    apache-service:
+      container_name: ServidorwebApache
+      image: httpd:latest
+      cpus: 1.5
+      mem_limit: 2048m
+      ports:
+       - "80:80"
